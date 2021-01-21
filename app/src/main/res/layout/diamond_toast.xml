@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/diamond_toastLayout">
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="90dp"
+        android:id="@+id/diamond_toastBG"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/notification"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:text="@string/winMessage"
+        android:fontFamily="@font/arcadepix"
+        android:textColor="@color/orange"
+        android:gravity="top"
+        android:drawableStart="@drawable/diamond_egg"
+        app:layout_constraintTop_toTopOf="@id/diamond_toastBG"
+        app:layout_constraintLeft_toLeftOf="@id/diamond_toastBG"
+        app:layout_constraintRight_toRightOf="@id/diamond_toastBG"
+        app:layout_constraintBottom_toBottomOf="@id/diamond_toastBG"
+        app:layout_constraintVertical_bias="0.55"
+        android:id="@+id/diamond_label"
+        android:textSize="16sp"
+
+        android:drawablePadding="8sp"
+
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:text="@string/winMessage2"
+        android:fontFamily="@font/lcd_solid"
+        android:textColor="@color/diamond"
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="@id/diamond_toastBG"
+        app:layout_constraintLeft_toLeftOf="@id/diamond_toastBG"
+        app:layout_constraintRight_toRightOf="@id/diamond_toastBG"
+        app:layout_constraintBottom_toBottomOf="@id/diamond_toastBG"
+        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.94"
+        android:id="@+id/diamond_toastText"
+        android:textSize="15sp"
+
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

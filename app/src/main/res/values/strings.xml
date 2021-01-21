@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Minecraft Board Game</string>
+    <string name="select_player">Select a Player</string>
+    <string name="steve">Steve</string>
+    <string name="alex">Alex</string>
+    <string name="play">" Press to Start "</string>
+    <string name="playAgain">" Play Again "</string>
+    <string name="credits">Developed by Jordan Lee</string>
+    <string name="next">" Next "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="test">You haven\'t selected a player yet.</string>
+    <string name="chestContents">You found 4 ender pearls and 1 diamond sword.</string>
+    <string name="moves">1</string>
+    <string name="minigameLabel">Minigame Time!</string>
+    <string name="minigameGame">Game: Enderman Brawl</string>
+    <string name="startGame1">" Start "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="time">15s</string>
+    <string name="diamondTime">5s</string>
+    <string name="endermanTime">5s</string>
+    <string name="dragonTime">15s</string>
+    <string name="dragonHearts">100</string>
+    <string name="blocks">0</string>
+    <string name="winMessage">You Won!</string>
+    <string name="winMessage2">You will receive a reward.</string>
+    <string name="currentMove">SWIPE UP</string>
+    <string name="toEnd">Travelling...</string>
+</resources>

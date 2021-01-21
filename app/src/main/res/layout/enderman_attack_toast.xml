@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/enderman_attack_toastLayout">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:id="@+id/enderman_attack_toastBG"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/notification"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:fontFamily="@font/lcd_solid"
+        android:textColor="@color/light_purple"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/enderman_icon"
+        app:layout_constraintTop_toTopOf="@id/enderman_attack_toastBG"
+        app:layout_constraintLeft_toLeftOf="@id/enderman_attack_toastBG"
+        app:layout_constraintRight_toRightOf="@id/enderman_attack_toastBG"
+        app:layout_constraintBottom_toBottomOf="@id/enderman_attack_toastBG"
+        android:id="@+id/enderman_attack_toastText"
+        android:textSize="14sp"
+
+        android:drawablePadding="13sp"
+        android:paddingStart="3dp"
+
+        >
+
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndermanActivity"
+    android:background="@drawable/enderman_bg"
+    >
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:id="@+id/enderman_logo"
+        android:src="@drawable/enderman_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        >
+    </ImageView>
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        android:id="@+id/enderman_instructions"
+        android:src="@drawable/enderman_instructions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        >
+    </ImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        android:id="@+id/startEndermanGame"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/arcade_pix"
+        android:text="@string/startGame1"
+        android:textSize="25dp"
+        android:padding="12dp"
+
+        >
+
+    </Button>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="420dp"
+            android:src="@drawable/enderman"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.85"
+            android:id="@+id/enderman"
+
+
+            >
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="150sp"
+            android:layout_height="80sp"
+            android:gravity="center_vertical"
+            android:textSize="40sp"
+            android:text="@string/endermanTime"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lcd_solid"
+            android:drawableStart="@drawable/clock"
+            android:drawablePadding="8dp"
+            app:layout_constraintTop_toTopOf="@id/enderman_logo"
+            app:layout_constraintBottom_toBottomOf="@id/enderman_logo"
+            app:layout_constraintRight_toRightOf="@id/enderman_logo"
+            app:layout_constraintLeft_toLeftOf="@id/enderman_logo"
+            android:paddingStart="0sp"
+            app:layout_constraintHorizontal_bias="0.17"
+            android:id="@+id/endermanCountdown"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/movesBG"
+            android:layout_width="165dp"
+            android:layout_height="125dp"
+            android:src="@drawable/move_background"
+            app:layout_constraintBottom_toBottomOf="@id/enderman_logo"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintLeft_toLeftOf="@id/enderman_logo"
+            app:layout_constraintRight_toRightOf="@id/enderman_logo"
+            app:layout_constraintTop_toTopOf="@id/enderman_logo"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/volume_down_icon"
+        android:id="@+id/move_icon"
+        app:layout_constraintTop_toTopOf="@id/movesBG"
+        app:layout_constraintBottom_toBottomOf="@id/movesBG"
+        app:layout_constraintRight_toRightOf="@id/movesBG"
+        app:layout_constraintLeft_toLeftOf="@id/movesBG"
+        app:layout_constraintVertical_bias="0.68"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="25dp"
+        android:id="@+id/move_text"
+        android:text="@string/currentMove"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/movesBG"
+        app:layout_constraintBottom_toBottomOf="@id/movesBG"
+        app:layout_constraintRight_toRightOf="@id/movesBG"
+        app:layout_constraintLeft_toLeftOf="@id/movesBG"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:fontFamily="@font/arcadepix"
+        app:layout_constraintVertical_bias="0.33"
+        app:layout_constraintHorizontal_bias="0.56"
+        >
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

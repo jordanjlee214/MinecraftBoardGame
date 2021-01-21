@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DragonActivity"
+    android:background="@drawable/end_bg"
+    >
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/drawingDragon"
+        class="com.leejordan.minecraftboardgame.DrawViewDragon"
+        >
+    </view>
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="520sp"
+        android:id="@+id/bossBattleInstructions"
+        android:src="@drawable/boss_battle_instructions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        >
+
+    </ImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startDragonGame"
+        android:text="@string/startGame1"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:fontFamily="@font/arcade_pix"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        android:background="@drawable/button"
+        android:padding="10sp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topBorder"
+        android:src="@drawable/endstone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/weaponSlot"
+        android:src="@drawable/weapon_slot"
+        app:layout_constraintTop_toTopOf="@id/topBorder"
+        app:layout_constraintBottom_toBottomOf="@id/topBorder"
+        app:layout_constraintRight_toRightOf="@id/topBorder"
+        app:layout_constraintLeft_toLeftOf="@id/topBorder"
+        app:layout_constraintHorizontal_bias="0.1"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:id="@+id/weapon"
+        android:src="@drawable/diamond_sword"
+        app:layout_constraintTop_toTopOf="@id/weaponSlot"
+        app:layout_constraintBottom_toBottomOf="@id/weaponSlot"
+        app:layout_constraintRight_toRightOf="@id/weaponSlot"
+        app:layout_constraintLeft_toLeftOf="@id/weaponSlot"
+        >
+
+    </ImageView>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/heartSlot"
+        android:src="@drawable/dragon_hearts"
+        app:layout_constraintTop_toTopOf="@id/topBorder"
+        app:layout_constraintBottom_toBottomOf="@id/topBorder"
+        app:layout_constraintRight_toRightOf="@id/topBorder"
+        app:layout_constraintLeft_toLeftOf="@id/topBorder"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintVertical_bias="0.53"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:id="@+id/timeSlot"
+        android:src="@drawable/small_toast"
+        app:layout_constraintTop_toTopOf="@id/topBorder"
+        app:layout_constraintBottom_toBottomOf="@id/topBorder"
+        app:layout_constraintRight_toRightOf="@id/topBorder"
+        app:layout_constraintLeft_toLeftOf="@id/topBorder"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintVertical_bias="0.55"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:text="@string/dragonTime"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lcd_solid"
+        android:drawableStart="@drawable/time_icon2"
+        android:drawablePadding="2dp"
+        app:layout_constraintTop_toTopOf="@id/timeSlot"
+        app:layout_constraintBottom_toBottomOf="@id/timeSlot"
+        app:layout_constraintRight_toRightOf="@id/timeSlot"
+        app:layout_constraintLeft_toLeftOf="@id/timeSlot"
+        android:id="@+id/dragonCountdown"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="@string/dragonHearts"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lcd_solid"
+        android:drawableStart="@drawable/heart_icon"
+        android:drawablePadding="5dp"
+        app:layout_constraintTop_toTopOf="@id/heartSlot"
+        app:layout_constraintBottom_toBottomOf="@id/heartSlot"
+        app:layout_constraintRight_toRightOf="@id/heartSlot"
+        app:layout_constraintLeft_toLeftOf="@id/heartSlot"
+        android:id="@+id/dragonLives"
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
